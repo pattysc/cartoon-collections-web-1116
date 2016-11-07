@@ -18,13 +18,11 @@ end
 
 def find_the_cheese(arr)# code an argument here
   # the array below is here to help
-  cheese_types = ["cheddar", "gouda", "camembert"]
+  cheeses = ["cheddar", "gouda", "camembert"]
 
-  if arr.include?("cheddar")
-    return "cheddar"
-  elsif arr.include?("gouda")
-    return "gouda"
-  elsif arr.include?("camembert")
-    return "camembert"  
+  # cheeses = %w(gouda cheddar camembert)
+
+  arr.find do |x|
+    cheeses.include?(x)
   end
 end
